@@ -1,0 +1,11 @@
+@import "vars";
+@import "mixins";
+@import "animations";
+
+.login-wrapper {
+  @include content-center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}

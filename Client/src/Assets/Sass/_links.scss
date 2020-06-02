@@ -1,0 +1,23 @@
+@import "vars";
+
+.test-link {
+  &--blueColor {
+    color: $color-blue;
+
+    &:hover {
+      color: $color-blue-hover;
+    }
+  }
+
+  &--darkColor {
+    color: $color-text-main;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &--linkBlock {
+    display: block;
+  }
+}

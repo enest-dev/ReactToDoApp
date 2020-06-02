@@ -1,0 +1,25 @@
+@import "vars";
+@import "mixins";
+@import "animations";
+
+.page-not-found {
+  @include content-center;
+
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  &__title {
+    font-size: 150px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+  }
+
+  &__message {
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+}

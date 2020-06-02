@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/Components/*"],
+      "@components": ["./src/Components/index.ts"],
+      "@enums": ["./src/Enums/index.ts"],
+      "@interfaces": ["./src/Interfaces/index.ts"],
+      "@models": ["./src/Models/index.ts"],
+      "@pages": ["./src/Pages/index.ts"],
+      "@services": ["./src/Services/index.ts"],
+      "@shared": ["./src/Components/Shared/index.ts"],
+      "@themes": ["./src/Themes/index.ts"]
+    },
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es6", "dom", "es2017"],
+    "sourceMap": true,
+    "esModuleInterop": false,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "strict": true
+  },
+  "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"]
+}

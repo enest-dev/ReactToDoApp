@@ -1,0 +1,18 @@
+@import "vars";
+
+.main-info {
+  width: 270px;
+  text-align: right;
+  padding-right: 8px;
+  color: $color-bg-content;
+  font-size: 11px;
+
+  &__version:after {
+    content: "|";
+    margin: 0 5px;
+  }
+
+  &__time {
+    font-weight: 700;
+  }
+}

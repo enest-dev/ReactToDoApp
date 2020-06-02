@@ -1,0 +1,11 @@
+@import "vars";
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 16px;
+  background-color: $color-bg-header;
+}

@@ -1,0 +1,68 @@
+@mixin content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$small-width: 900;
+$medium-width: 1024px;
+$large-width: 1390px;
+
+@mixin mediumScreens {
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin triangle($size, $color, $direction) {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: round($size / 2);
+
+  @if ($direction == top) {
+    border-bottom-color: $color;
+  } @else if ($direction == bottom) {
+    border-top-color: $color;
+  } @else if ($direction == right) {
+    border-left-color: $color;
+  } @else if ($direction == left) {
+    border-right-color: $color;
+  }
+}
+
+@mixin placeholder($font, $color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+    font-size: $font;
+  }
+
+  &:-ms-input-placeholder {
+    font-size: $font;
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $font;
+    opacity: 1;
+  }
+}
+
+%truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

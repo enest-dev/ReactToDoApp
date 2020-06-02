@@ -1,0 +1,9 @@
+@import "./scss/header";
+@import "./scss/info";
+@import "./scss/logo";
+@import "./scss/navigation";
+@import "./scss/tab";
+
+.tabs__wrapper {
+  height: calc(100% - 70px);
+}

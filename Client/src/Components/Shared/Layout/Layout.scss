@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixins";
+
+.content-wrapper {
+  height: 100%;
+}
+
+.content {
+  height: calc(100% - 81px);
+  max-width: 1400px;
+  padding: $size-gap-main;
+  margin: 0 auto;
+
+  &:empty {
+    display: none;
+  }
+}
+
+@include mediumScreens() {
+  .test-content {
+    padding: $size-gap-main;
+  }
+}
